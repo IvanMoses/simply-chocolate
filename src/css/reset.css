@@ -1,31 +1,39 @@
 /* Reset styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+body {
+    font-family: Montserrat, sans-serif;
+    color: var(--primary-text-color);
 }
 
-a {
-    color: currentColor;
-    text-decoration: none;
+.container {
+    max-width: 475px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button {
-    cursor: pointer;
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
