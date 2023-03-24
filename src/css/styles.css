@@ -56,3 +56,42 @@
   --footer-background-color: rgba(30, 24, 35, 1);
   --footer-icon-color: rgba(255, 255, 255, 1);
 }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-text-color);
+}
+
+.container {
+  max-width: 475px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
