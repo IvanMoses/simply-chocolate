@@ -1,3 +1,7 @@
+:root {
+    --padding-top: 50px;
+}
+
 .section-benefist {
     width: 100%;
     background-color: var(--secondary-color);
