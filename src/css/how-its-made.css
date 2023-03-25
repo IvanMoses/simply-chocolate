@@ -1,9 +1,19 @@
 .section.howmade {
-    padding-right: 32px;
-    padding-left: 32px;
     padding-bottom: 128px;
 
     background-color: #E2E2E2;
+}
+
+@media screen and (min-width: 768px) {
+    .section.howmade {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section.howmade {
+        padding-bottom: 128px;
+    }
 }
 
 .howmade-title {
