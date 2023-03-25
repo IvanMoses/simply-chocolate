@@ -11,6 +11,7 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./modal-windows.css');
+@import url('./section-benefist.css');
 
 :root {
   --primary-color: #111111;
