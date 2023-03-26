@@ -217,7 +217,8 @@ ul {
         cursor: pointer;
     }
 
-    .sellers-button-added:hover .sellers-button-added:focus {
+    .sellers-button-added:hover,
+    .sellers-button-added:focus {
         background-color: #fcf1e0;
         color: #fd9222;
     }
