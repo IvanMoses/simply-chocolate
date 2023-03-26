@@ -2,6 +2,8 @@
 footer {
     padding: 50px 0;
     background: #1e1823;
+    width: 100%;
+    max-width: 1200px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +26,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 62px;
 }
@@ -35,6 +38,7 @@ footer {
 
 .footer-main-buttons {
     width: 100%;
+    max-width: 1200px;
 }
 
 .footer-address {
@@ -57,13 +61,11 @@ footer {
 
 .footer-social-links-list {
     display: flex;
-    gap: 21px;
+    gap: 19px;
 }
 
 .footer-social-item {
-    fill: #ffffff;
-    width: 20px;
-    height: 20px;
+   stroke: #fff;
 }
 
 .footer-social-item:hover,
