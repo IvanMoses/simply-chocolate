@@ -1,6 +1,5 @@
 .section.howmade {
     padding-bottom: 72px;
-
     background-color: #E2E2E2;
 }
 
@@ -81,6 +80,7 @@
         height: 44px;
     }
 }
+
 .howmade-content-text {
     padding: 20px 14px;
     margin-left: auto;
