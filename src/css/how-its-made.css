@@ -1,0 +1,153 @@
+.section.howmade {
+    padding-bottom: 128px;
+    background-color: #E2E2E2;
+}
+
+@media screen and (min-width: 768px) {
+    .section.howmade {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section.howmade {
+        padding-bottom: 128px;
+    }
+}
+
+.howmade-title {
+    margin-bottom: 32px;
+
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-title {
+        margin-bottom: 50px;
+    }
+}
+
+.howmade-title-part {
+    color: #FD9222;
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+.howmade-content-video {
+    position: relative;
+}
+
+.howmade-image {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-image {
+        margin: 0;
+    }
+}
+
+.howmade-svg-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-svg-play {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.howmade-content-text {
+    padding: 20px 14px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 335px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-content-text {
+        padding: 32px 102px 32px 32px;
+
+        max-width: 614px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-content-text {
+        margin: 0;
+        padding: 32px 60px 34px 32px;
+
+        max-width: 516px;
+    }
+}
+
+
+.howmade-section-text {
+    margin-bottom: 20px;
+
+    max-width: 307px;
+    width: 100%;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111111;
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-section-text {
+        margin-bottom: 28px;
+
+        max-width: 350px;
+    }
+}
+
+.howmade-section-items {
+    padding-left: 8px;
+    list-style-image: url(../img/how-its-made-img/ellipselist.svg);
+}
+
+.howmade-section-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+
+.howmade-section-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-section-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
