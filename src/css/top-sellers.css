@@ -177,6 +177,16 @@ ul {
 
     .top-sellers-text-added {
         max-width: 407px;
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            /* or 129% */
+        
+            letter-spacing: -0.02em;
+        
+            color: #111111;
 
         margin: 0;
     }
