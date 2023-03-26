@@ -1,0 +1,64 @@
+.title-components {
+    margin-bottom: 28px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+ 
+}
+
+.text-taste {
+    color: #FD9222;
+}
+
+.text-components {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tumb-components  {
+    display: flex;
+}
+
+.item-components {
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.item-components:not(:last-child){
+    margin-right:19px;
+}
+
+.img-components {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-item-components {
+    padding-left: 28px;
+    padding-top: 224px;
+}
+
+.milk-chocolate {
+    background-color: #FD9222;
+   
+ 
+}
+
+.milk {
+
+}
+
+.nuts {
+    background-color:#1E1823;
+}
+
+.sweet-chocolate{
+
+}
+
