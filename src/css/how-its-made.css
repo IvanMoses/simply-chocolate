@@ -1,6 +1,6 @@
 .section.howmade {
     padding-bottom: 72px;
-    background-color: #FAFAFA;
+    background-color: var(--fourth-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -25,7 +25,7 @@
     line-height: 28px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--primary-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -35,7 +35,7 @@
 }
 
 .howmade-title-part {
-    color: #FD9222;
+    color: var(--third-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -118,7 +118,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-    color: #111111;
+    color: var(--primary-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -139,7 +139,7 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.02em;
-    color: #111111;
+    color: var(--primary-color);
 }
 
 .howmade-section-item:not(:last-child) {

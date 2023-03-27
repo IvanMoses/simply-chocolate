@@ -1,6 +1,6 @@
 .section.products {
     padding-bottom: 72px;
-    background-color: #FAFAFA;
+    background-color: var(--fourth-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -24,7 +24,7 @@
     line-height: 28px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--primary-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -34,38 +34,38 @@
 }
 
 .products-title-part {
-    color: #FD9222;
+    color: var(--third-color);
 }
 
-.swiper {
+.swiper.products-swiper {
     width: 335px;
     height: 397px;
 }
 
 @media screen and (min-width: 768px) {
-    .swiper {
+    .swiper.products-swiper {
         width: 735px;
         height: 409px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .swiper {
+    .swiper.products-swiper {
         width: 1136px;
     }
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination-bullet.products-swiper {
     width: 13px;
     height: 13px;
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
 }
 
 .swiper-pagination-bullet-active {
     width: 28px;
     height: 13px;
     border-radius: 13px;
-    background: #FD9222;
+    background-color: var(--third-color);
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction {
@@ -121,7 +121,7 @@
     line-height: 24px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--primary-color);
 }
 
 .products-type {
@@ -141,12 +141,12 @@
 
     width: 94px;
 
-    background-color: #FAFAFA;
+    background-color: var(--fourth-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
 
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #111111;
+    color: var(--primary-color);
 }
