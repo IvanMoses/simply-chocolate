@@ -180,12 +180,6 @@
         padding-bottom: 100px;
     }
 
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
     .title {
         font-size: 24px;
         line-height: 1.17;
@@ -394,12 +388,6 @@
                 padding-bottom: 100px;
             }
     
-            .container {
-                max-width: 768px;
-                padding-left: 32px;
-                padding-right: 32px;
-            }
-    
             .title {
                 font-size: 24px;
                 line-height: 1.17;
@@ -444,12 +432,6 @@
         @media screen and (min-width: 1200px) {
             .reviews {
                 padding-bottom: 128px;
-            }
-    
-            .container {
-                max-width: 1136px;
-                padding-left: 32px;
-                padding-right: 32px;
             }
     
             .swiper {
