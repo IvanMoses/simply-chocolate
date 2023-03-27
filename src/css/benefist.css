@@ -4,8 +4,10 @@
 
 .section-benefist {
     width: 100%;
-    max-width: 1200px;
     background-color: var(--secondary-color);
+    margin-top: 72px;
+    margin-bottom: 72px;
+
 }
 
 .benefist-container {
