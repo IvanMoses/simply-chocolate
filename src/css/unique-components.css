@@ -31,11 +31,6 @@
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
 .item-components {
     width: 270px;
     height: 270px;
@@ -44,11 +39,9 @@
     display: flex;
 }
 
-
-
 @media (min-width:1200px) {
 
-.item-components:not(:last-child){
+.item-components:not(:last-child) {
     margin-right:19px;
 }
 }
@@ -70,9 +63,9 @@
     }
 
 
-    .item-components {
+    /* .item-components { 
         width: 336px;
-    }
+    }*/
 
     .section-components {
         padding-bottom:100px;
