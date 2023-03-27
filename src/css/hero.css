@@ -1,5 +1,11 @@
 /* Hero */
+.container.hero-container {
+padding-bottom: 72px;
+}
 
+.container.hero-container {
+    padding-bottom: 72px;
+}
 .hero {
     max-width: 1136px;
     margin: 0 auto;
@@ -118,7 +124,7 @@ button {
 @media screen and (max-width: 768px) {
 
     .hero {
-        padding: 395px 21px 21px 20px;
+        padding: 395px 21px 27px 20px;
     }
 
     .hero-text {
@@ -156,6 +162,9 @@ button {
     .hero {
         padding-top: 671px;
     }
+    .container.hero-container {
+        
+    padding-bottom: 50px;    }
 }   
 
 .visually-hidden {
