@@ -10,55 +10,76 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
   <script type="module" crossorigin src="/simply-chocolate/assets/index-95b20a08.js"></script>
-  <link rel="stylesheet" href="/simply-chocolate/assets/index-b1452373.css">
+  <link rel="stylesheet" href="/simply-chocolate/assets/index-5080d651.css">
 </head>
 <body>
   <main>
     <!-- Header -->
 <header>
-    <nav>
-    <a href="./index.html">SIMPLY&nbsp;<span>CHOCOLATE</span>
-        <svg width="24" height="24">
-            <use href=""></use>
-        </svg>
-    </a>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#recipe">How it's made?</a></li>
-            <li><a href="#products">Our products</a></li>
-            <li><a href="#top-sellers">Top sellers</a></li>
-            <li><a href="#lovers">Chocolate is loved</a></li>
+    <div class="container header-container">
+        <nav class="header-nav">
+            <a class="logo" href="./index.html">SIMPLY&nbsp;<span class="logo-second">CHOCOLATE</span>
+                <svg width="24" height="24">
+                    <use href="./img/symbol-defs.svg#icon-chocolate-logo"></use>
+                </svg>
+            </a>
+            <ul class="header-menu">
+                <li><a class="header-link" href="./index.html">Home</a></li>
+                <li><a class="header-link" href="#recipe">How it&#39;s made?</a></li>
+                <li><a class="header-link" href="#products">Our products</a></li>
+                <li><a class="header-link" href="#top-sellers">Top sellers</a></li>
+                <li><a class="header-link" href="#lovers">Chocolate is loved</a></li>
+            </ul>
+        </nav>
+        <ul class="social-links-nav">
+            <li>
+                <a class="social-link" href="">
+                    <svg width="24" height="24">
+                        <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="social-link" href="">
+                    <svg width="24" height="24">
+                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
         </ul>
-    </nav>
-    <ul>
-        <li>
-        <a href="#">
-            <svg width="24" height="24">
-                <use></use>
+
+        <!-- Mobile menu -->
+        <button class="burger-menu">
+            <svg width="28" height="28" aria-label="mobile menu switcher">
+                <use href="./img/symbol-defs.svg#icon-burger-menu"></use>
             </svg>
-        </a>
-        <a href="#">
-            <svg width="24" height="24">
-                <use></use>
-            </svg>
-        </a>
-    </ul>
+        </button>
+    </div>
 </header>
     <!-- Hero -->
-<section class="section hero">
-    <!-- <h1 class="visually-hidden">Chocolate-covered-cocoa-powder</h1> -->
-    <h2>Treat yourself or a loved one to 
-        our finest ingredients for a moment 
-        of pure delight!</h2>
-    <button type="button">Buy now</button>
-    <button href="#recipe">How it's made</button>
-    <p>scroll down</p>
-    <button href="#footer">
-        <svg>
-            <use></use>
-        </svg>
-    </button>
-</section>
+    <section class="hero">
+        <div class="container hero-container">
+            <!-- <h1 class="visually-hidden">Chocolate-covered-cocoa-powder</h1> -->
+        <h2 class="hero-text">Treat yourself or a loved one to <br> 
+            our finest ingredients for a moment 
+            of pure delight!</h2>
+            <div class="hero-buttons">
+                <div class="main-buttons">
+                    <button class="btn buy-now" type="button">Buy now</button>
+                <button class="btn how-made" href="#recipe">How it&#39;s made</button>
+                </div>
+            
+                <button class="scroll" href="#footer">
+                    scroll down
+                <svg class="arrow" width="22" height="22">
+                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+            </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
     <section class="section-benefist">
     <ul class="container benefist-container">
         <li class="benefist-item">
@@ -398,54 +419,57 @@
 </section>
     <!-- footer -->
 <footer>
-    <div class="container">
-        <div class="footer-container">
-            <div class="footer-info">
-                <p>
-                    <span class="footer-orange-title">Chocolate</span> a delicious cure
-                    for a bad day
-                </p>
-            </div>
-            <div class="footer-address-container">
-                <address class="footer-address">
-                    <p class="footer-address-title">Contact us</p>
-                    <ul class="address-list">
-                        <li>
-                            <a href="tel:+380684439426">+380 (68) 443-94-26</a>
-                        </li>
-                        <li>
-                            <a href=" mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-                        </li>
-                    </ul>
-                </address>
+  <div class="container">
+    <div class="footer-container">
+      <div class="footer-info">
+        <p>
+          <span class="footer-orange-title">Chocolate</span> a delicious cure
+          for a bad day
+        </p>
+      </div>
+      <div class="footer-address-container">
+        <address class="footer-address">
+          <p class="footer-address-title">Contact us</p>
+          <ul class="address-list">
+            <li>
+              <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+            </li>
+            <li>
+              <a href=" mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+            </li>
+          </ul>
+        </address>
 
-                <ul class="footer-social-links-list">
-                    <li>
-                        <a href="#">
-                            <svg class="footer-social-item" width="20" height="20">
-                                <use href="../img/sprite/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><svg class="footer-social-item" width="20" height="20">
-                                <use href="../img/sprite/symbol-defs.svg#icon-twitter"></use>
-                            </svg></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-main-buttons">
-            <ul class="footer-main-buttons-list">
-                <li><a class="footer-links current" href="#">Home</a></li>
-                <li><a a class="footer-links" href="#">How it's made?</a></li>
-                <li><a a class="footer-links" href="#">Our products</a></li>
-                <li><a a class="footer-links" href="#">Top sellers</a></li>
-                <li><a a class="footer-links" href="#">Chocolate is loved</a></li>
-            </ul>
-        </div>
+        <ul class="footer-social-links-list">
+          <li>
+            <a href="#">
+              <svg class="footer-social-item" width="20" height="20">
+                <use href="../img/sprite/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg class="footer-social-item" width="20" height="20">
+                <use
+                  href="../img/sprite/symbol-defs.svg#icon-twitter"
+                ></use></svg></a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-main-buttons">
+      <ul class="footer-main-buttons-list">
+        <li><a class="footer-links current" href="#">Home</a></li>
+        <li><a a class="footer-links" href="#">How it's made?</a></li>
+        <li><a a class="footer-links" href="#">Our products</a></li>
+        <li><a a class="footer-links" href="#">Top sellers</a></li>
+        <li><a a class="footer-links" href="#">Chocolate is loved</a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
+
     
     </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
