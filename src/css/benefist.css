@@ -4,12 +4,12 @@
 
 .section-benefist {
     width: 100%;
+    max-width: 1200px;
     background-color: var(--secondary-color);
 }
 
 .benefist-container {
     color: var(--fourth-color);
-
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
