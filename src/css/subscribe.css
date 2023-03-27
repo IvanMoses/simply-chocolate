@@ -5,25 +5,21 @@
   justify-content: center;
 
   background-repeat: no-repeat;
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url(../img/subscribe-img/background-1200.jpg);
   background-position: center;
   background-size: 1200px, 1200px;
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppi) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppi) {
   .subscribe-section {
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe-img/background-1200@2x.jpg);
   }
 }
@@ -86,24 +82,20 @@
 @media screen and (max-width: 767px) {
   .subscribe-section {
     padding: 62px 0;
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe-img/background-375.jpg);
     background-size: 375px, 375px;
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppi) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppi) {
     .subscribe-section {
-      background-image: linear-gradient(
-          0deg,
+      background-image: linear-gradient(0deg,
           rgba(0, 0, 0, 0.2),
-          rgba(0, 0, 0, 0.2)
-        ),
+          rgba(0, 0, 0, 0.2)),
         url(../img/subscribe-img/background-375@2x.jpg);
     }
   }
@@ -130,24 +122,20 @@
 /**************TABLET SCREEN*****/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .subscribe-section {
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
+        rgba(0, 0, 0, 0.2)),
       url(../img/subscribe-img/background-768.jpg);
     background-size: 768px, 768px;
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppi) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppi) {
     .subscribe-section {
-      background-image: linear-gradient(
-          0deg,
+      background-image: linear-gradient(0deg,
           rgba(0, 0, 0, 0.2),
-          rgba(0, 0, 0, 0.2)
-        ),
+          rgba(0, 0, 0, 0.2)),
         url(../img/subscribe-img/background-768@2x.jpg);
     }
   }
