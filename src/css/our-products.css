@@ -16,7 +16,6 @@
 }
 
 .products-title {
-    margin-bottom: 32px;
 
     text-align: center;
 
@@ -30,7 +29,7 @@
 
 @media screen and (min-width: 768px) {
     .products-title {
-        margin-bottom: 50px;
+        
     }
 }
 
