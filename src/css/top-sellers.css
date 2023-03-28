@@ -1,11 +1,5 @@
 /*  GLOBAL  */
-.container {
-  max-width: 475px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
  .sellers-section {
   padding-bottom: 128px;
   }
@@ -132,11 +126,6 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 
   .title {
     font-size: 24px;
@@ -182,11 +171,6 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1136px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 
   .wrapper {
     display: flex;
