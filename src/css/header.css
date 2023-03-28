@@ -1,0 +1,142 @@
+/* Header */
+
+a,
+li {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 26px;
+    padding-bottom: 36px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 24px;
+    margin-left: 188px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: var(--primary-color);
+}
+
+.logo-second {
+    font-style: normal;
+    margin-right: 4px;
+}
+
+.social-links-nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: 18px;
+    margin: 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    fill: var(--fourth-color);
+    stroke: var(--primary-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+    stroke: var(--third-color);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .header-container {
+        width: 704px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .logo svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .logo {
+        font-size: 14px;
+        line-height: 1.29;
+
+    }
+
+    .header-menu,
+    .social-links-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-container {
+        width: 335px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    header {
+    padding-top: 20px;
+    padding-bottom: 14px;
+    }
+}
+
+.burger-menu {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    stroke: var(--primary-color);
+}
+    
+@media screen and (min-width: 1199px) {
+
+    .burger-menu {
+        display: none;
+    }
+}

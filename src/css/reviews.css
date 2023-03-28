@@ -1,0 +1,250 @@
+.reviews {
+    padding-bottom: 72px;
+}
+
+/*  TITLE  */
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: -0.03em;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #111111;
+
+    margin: 0;
+}
+
+.title-accent {
+    color: #FD9222;
+}
+
+
+.swiper {
+    max-width: 335px;
+    height: 275px;
+
+    padding-top: 74px;
+}
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+
+    /*background-color: rgba(17, 17, 17, 0.1);*/
+    /*color: rgba(17, 17, 17, 0.1);*/
+    background: #1111111A;
+
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FD9222;
+    width: 28px;
+
+    border-radius: 100px;
+}
+
+
+/*  REWIEW  */
+.review-list {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.review-item {
+    position: relative;
+    height: 200px;
+    max-width: 333px;
+
+    background-color: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    border-radius: 15px;
+}
+
+.review-item::before {
+    content: " ";
+    display: block;
+    position: absolute;
+
+    top: -20%;
+    right: 50%;
+    transform: translateX(50%);
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+}
+
+.victoria::before {
+    background-image: url(../img/reviews-img/rewiew-img-1.png);
+}
+
+.nazar:before {
+    background-image: url(../img/reviews-img/rewiew-img-2.png);
+}
+
+.olena:before {
+    background-image: url(../img/reviews-img/rewiew-img-3.png);
+}
+
+.natalia:before {
+    background-image: url(../img/reviews-img/rewiew-img-4.png);
+}
+
+.danilo:before {
+    background-image: url(../img/reviews-img/rewiew-img-5.png);
+}
+
+.irina:before {
+    background-image: url(../img/reviews-img/rewiew-img-6.png);
+}
+
+.review-item-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+
+    text-align: center;
+
+    color: #111111;
+
+    padding-top: 58px;
+}
+
+.review-item-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    margin: 24px 18px 15px 18px;
+}
+
+.review-button {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+
+    color: #111111;
+    background-color: transparent;
+
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+
+    padding: 12px 28px;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.review-button:hover,
+.review-button:focus {
+    color: #FFFFFF;
+    background-color: #FD9222;
+    border: 1px solid transparent;
+}
+
+
+@media screen and (min-width: 768px) {
+    .reviews {
+        padding-bottom: 100px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    .swiper {
+        padding-top: 91px;
+
+        max-width: 704px;
+        height: 285px;
+    }
+
+    .review-item {
+        max-width: 342px;
+
+        margin-right: 16px;
+    }
+
+    .review-item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .review-item-text {
+        margin: 24px 16px 15px 16px;
+    }
+
+    .review-button {
+        margin-top: 50px;
+
+        font-size: 18px;
+        line-height: 22px;
+
+        padding: 14px 40px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .reviews {
+        padding-bottom: 128px;
+    }
+
+
+.swiper {
+    max-width: 1136px;
+}
+
+.review-item {
+    max-width: 358px;
+
+    margin-right: 28px;
+}
+
+.review-item:nth-child(2n) {
+    margin-right: 28px;
+}
+
+.review-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.review-item-text {
+    margin: 24px 24px 15px 24px;
+}
+}

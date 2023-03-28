@@ -5,11 +5,12 @@
 .section-benefist {
     width: 100%;
     background-color: var(--secondary-color);
+    margin-bottom: 72px;
+
 }
 
 .benefist-container {
     color: var(--fourth-color);
-
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;

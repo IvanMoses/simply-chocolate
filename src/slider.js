@@ -1,4 +1,4 @@
-swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -16,7 +16,7 @@ swiper = new Swiper('.swiper', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  //scrollbar: {
+   // el: '.swiper-scrollbar',
+  //},
 });
