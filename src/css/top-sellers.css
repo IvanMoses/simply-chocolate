@@ -88,6 +88,7 @@ ul {
   height: 30px;
 
   margin: 20px auto 0 auto;
+}
 
 .sellers-button {
     display: flex;
@@ -241,7 +242,7 @@ ul {
         font-size: 18px;
         line-height: 22px;
     }
-}
+
 
 @media screen and (min-width: 1200px) {
     .sellers-section {
