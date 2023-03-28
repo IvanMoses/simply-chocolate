@@ -1,26 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
-    rel="stylesheet" />
-  <title>Simply Chocolate</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  
-  <script type="module" crossorigin src="/simply-chocolate/assets/index-19ec5037.js"></script>
-  <link rel="stylesheet" href="/simply-chocolate/assets/index-28a2f8e2.css">
-</head>
-<body>
-  <main>
-     <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simply Chocolate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-cc1f4465.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-64186bc6.css">
+  </head>
+  <body>
+    <main>
+      <div class="modal modal-buy" data-modal="buy">
+  <svg class="modal-icon-close js-modal-close">
+    <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+  </svg>
+  <h2 class="modal-title"><span class="modal-title-span">BUY</span> NOW</h2>
+
+  <ul class="modal-list-phone">
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-phone.jpg    1x,
+          ../img/modal-windows-img/black-phone@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-phone.jpg"
+        alt="black chocolate"
+        width="167"
+        height="148"
+      />
+      <span class="modal-item-span">100 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/white-milk-phone.jpg    1x,
+          ../img/modal-windows-img/white-milk-phone@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/white-milk-phone.jpg"
+        alt="white&milk chocolate"
+        width="167"
+        height="148"
+      /><span class="modal-item-span">200 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-bars-phone.jpg    1x,
+          ../img/modal-windows-img/black-bars-phone@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-bars-phone.jpg"
+        alt="milk chocolate"
+        width="167"
+        height="148"
+      /><span class="modal-item-span">300 g</span>
+    </li>
+  </ul>
+
+  <ul class="modal-list-tablet">
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-tablet.jpg    1x,
+          ../img/modal-windows-img/black-tablet@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-tablet.jpg"
+        alt="black chocolate"
+        width="120"
+        height="107"
+      />
+      <span class="modal-item-span">100 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/white-milk-tablet.jpg    1x,
+          ../img/modal-windows-img/white-milk-tablet@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/white-milk-tablet.jpg"
+        alt="white&milk chocolate"
+        width="120"
+        height="107"
+      /><span class="modal-item-span">200 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-bars-tablet.jpg    1x,
+          ../img/modal-windows-img/black-bars-tablet@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-bars-tablet.jpg"
+        alt="milk chocolate"
+        width="120"
+        height="107"
+      /><span class="modal-item-span">300 g</span>
+    </li>
+  </ul>
+
+  <form class="form" autocomplete="off">
+    <label class="modal-form-item">
+      <span class="label">Personal information </span>
+      <input
+        type="text"
+        name="name"
+        class="modal-input name input-none"
+        placeholder="Name"
+      />
+      <input
+        type="text"
+        name="surname"
+        class="modal-input input-none"
+        placeholder="Surname"
+      />
+      <div class="first-modal-input">
+        <input
+          type="text"
+          name="name"
+          class="modal-input input-width"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          name="surname"
+          class="modal-input input-width"
+          placeholder="Surname"
+        />
+      </div>
+    </label>
+
+    <label class="modal-form-item">
+      <span class="label">Email</span>
+      <input
+        type="email"
+        name="email"
+        class="modal-input"
+        placeholder="Enter your email"
+      />
+    </label>
+
+    <label class="modal-form-item">
+      <span class="label">Phone number</span>
+      <input
+        type="tel"
+        name="tel"
+        class="modal-input phone"
+        placeholder="Phone number"
+      />
+      <svg class="modal-input-icon">
+        <use href="../img/sprite/symbol-defs.svg#icon-flag"></use>
+      </svg>
+      <span class="modal-input-span">+380</span>
+    </label>
+
+    <label class="modal-form-item">
+      <span class="label">Card number</span>
+      <input
+        type="number"
+        name="card"
+        class="modal-input"
+        placeholder="Enter card"
+      />
+      <svg class="modal-input-icon-mc">
+        <use href="../img/sprite/symbol-defs.svg#icon-mastercard"></use>
+      </svg>
+    </label>
+
+    <label class="modal-form-item last">
+      <span class="label">Comment</span>
+      <textarea
+        name="comment"
+        class="modal-input comment"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+    <div>
+      <button
+        type="submit"
+        class="btn-modal js-modal-close js-open-modal"
+        data-modal="ty"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<div class="modal modal-ty" data-modal="ty">
+  <div class="icon-close-thumb">
+    <svg class="modal-ty-icon-close js-modal-close">
+      <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </div>
+  <h2 class="modal-title modal-title-ty">thank you!</h2>
+  <p class="modal-text-ty">
+    We are glad that you ordered our chocolate and we are giving you a 20%
+    discount on all our products.
+  </p>
+</div>
+
+<div class="modal modal-subscribe" data-modal="subscribe">
+  <svg class="modal-subscribe-icon-close js-modal-close">
+    <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+  </svg>
+  <h2 class="modal-title modal-title-subscribe">
+    <span class="modal-title-span">Explore our</span> <br />
+    new chocolate <span class="modal-title-span">first!</span>
+  </h2>
+  <form class="form-subscribe">
+    <input
+      type="email"
+      placeholder="Enter your email"
+      class="input-subscribe"
+    />
+    <button type="submit" class="btn-modal btn-subscribe js-modal-close">
+      Submit
+    </button>
+  </form>
+</div>
+
+<div class="modal modal-review" data-modal="review">
+  <svg class="modal-icon-close js-modal-close">
+    <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+  </svg>
+
+  <h2 class="modal-title modal-title-review">
+    <span class="modal-title-span">
+      leave a review <br />
+      about</span
+    >
+    our chocolate
+  </h2>
+
+  <form class="form-review" autocomplete="off">
+    <input
+      type="text"
+      name="name"
+      class="modal-input input-review"
+      placeholder="Name"
+    />
+
+    <input
+      type="email"
+      name="email"
+      class="modal-input input-review"
+      placeholder="Enter your email"
+    />
+
+    <div class="input-review-container">
+      <input
+        type="tel"
+        name="tel"
+        class="modal-input phone"
+        placeholder="Phone number"
+      />
+      <svg class="modal-input-icon input-icon-review">
+        <use href="../img/sprite/symbol-defs.svg#icon-flag"></use>
+      </svg>
+      <span class="modal-input-span input-icon-review">+380</span>
+    </div>
+
+    <textarea
+      name="comment"
+      class="modal-input comment input-review-comment"
+      placeholder="Enter text"
+    ></textarea>
+
+    <button
+      type="submit"
+      class="btn-modal js-modal-close js-open-modal"
+      data-modal="feedback"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
+<div class="modal modal-ty" data-modal="feedback">
+  <div class="icon-close-thumb">
+    <svg class="modal-ty-icon-close js-modal-close">
+      <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </div>
+  <h2 class="modal-title modal-title-ty">thank you for your feedback!</h2>
+  <p class="modal-text-ty">We are so happy to hear from you!</p>
+</div>
+
+       <!-- Header -->
     <header>
         <div class="container header-container">
             <nav class="header-nav">
                 <a class="logo" href="./index.html">SIMPLY&nbsp;<span class="logo-second">CHOCOLATE</span>
                     <svg width="24" height="24">
-                        <use href="/simply-chocolate/assets/symbol-defs-ddc90949.svg#icon-chocolate-logo"></use>
+                        <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-chocolate-logo"></use>
                     </svg>
                 </a>
                     <ul class="header-menu">
@@ -35,14 +314,14 @@
                 <li>
                     <a class="social-link" href="">
                         <svg width="24" height="24">
-                            <use href="/simply-chocolate/assets/symbol-defs-ddc90949.svg#icon-instagram"></use>
+                            <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a class="social-link" href="">
                         <svg width="24" height="24">
-                            <use href="/simply-chocolate/assets/symbol-defs-ddc90949.svg#icon-twitter"></use>
+                            <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
@@ -51,7 +330,7 @@
                 <!-- Mobile menu -->
             <button class="burger-menu">
                 <svg width="28" height="28">
-                    <use href="/simply-chocolate/assets/symbol-defs-ddc90949.svg#icon-burger-menu"></use>
+                    <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-burger-menu"></use>
                 </svg>
             </button>
         </div>
@@ -60,7 +339,7 @@
   
 </body>
 </html>
-      
+        
     <!-- Hero -->
 
     <section class="container hero-container">
@@ -78,13 +357,13 @@
                 <button class="scroll" alt="#footer">
                     scroll down
                 <svg class="arrow" width="22" height="22">
-                    <use href="/simply-chocolate/assets/symbol-defs-ddc90949.svg#icon-arrow"></use>
+                    <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-arrow"></use>
                 </svg>
             </button>
         </div>   
     </section>
     
-    <section class="section-benefist">
+      <section class="section-benefist">
     <ul class="container benefist-container">
         <li class="benefist-item">
             <div>
@@ -139,7 +418,7 @@
         </li>
     </ul>
 </section>
-    <Section class="section-components container ">
+      <Section class="section-components container ">
     <h2 class="title-components">IT ALL ADDS UP TO ONE <br> EXCEPTIONAL <span class="text-taste">TASTE</span> SENSATION</h2>
     <p class="text-components">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details.
          From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.
@@ -199,7 +478,7 @@
         </li>
     </ul>
 </Section>
-    <section class="section howmade" id="recipe">
+      <section class="section howmade" id="recipe">
     <div class="container">
         <h2 class="howmade-title">how it's <span class="howmade-title-part">made?</span></h2>
         <div class="howmade-content">    
@@ -227,7 +506,7 @@
         </div>
     </div>
 </section>
-    <section class="section products" id="products">
+      <section class="section products" id="products">
     <div class="container">
         <h2 class="products-title">Our <span class="products-title-part">products</span></h2>
         <!-- Slider main container -->
@@ -396,7 +675,101 @@
         </div>
     </div>
 </section>
-    <section class="sellers-section" id="top-sellers">
+      
+<section class="sellers-section">
+  <div class="container">
+    <h2 class="title"><span class="title-accent">Top </span>Sellers</h2>
+    <ul class="top-sellers-list">
+      <li class="sellers-item">
+        <img
+          src="../img/top-sellers-img/top-sellers-mob-1.jpg"
+          alt="Top Sellers Image"
+          srcset="
+            ../img/top-sellers-img/top-sellers-mob-1.jpg    1x,
+            ../img/top-sellers-img/top-sellers-mob-1-2x.jpg 2x
+          "
+          class="top-sellers-img"
+        />
+        <img
+          src="../img/top-sellers-img/top-sellers-tab-1.jpg"
+          alt="Top Sellers Image"
+          srcset="
+            ../img/top-sellers-img/top-sellers-tab-1.jpg    1x,
+            ../img/top-sellers-img/top-sellers-tab-1-2x.jpg 2x
+          "
+          class="top-sellers-img tablet-img"
+        />
+        <img
+          src="../img/top-sellers-img/top-sellers-desk-1.jpg"
+          alt="Top Sellers Image"
+          srcset="
+            ../img/top-sellers-img/top-sellers-desk-1.jpg    1x,
+            ../img/top-sellers-img/top-sellers-desk-1-2x.jpg 2x
+          "
+          class="top-sellers-img desktop-img"
+        />
+        <p class="top-sellers-text">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li class="sellers-item">
+        <img
+          src="../img/top-sellers-img/top-sellers-mob-2.jpg"
+          alt="Top Sellers Image"
+          srcset="
+            ../img/top-sellers-img/top-sellers-mob-2.jpg    1x,
+            ../img/top-sellers-img/top-sellers-mob-2-2x.jpg 2x
+          "
+          class="top-sellers-img"
+        />
+        <img
+          src="../img/top-sellers-img/top-sellers-tab-2.jpg"
+          alt="Top Sellers Image"
+          srcset="
+            ../img/top-sellers-img/top-sellers-tab-2.jpg    1x,
+            ../img/top-sellers-img/top-sellers-tab-2-2x.jpg 2x
+          "
+          class="top-sellers-img tablet-img"
+        />
+        <img
+          src="../img/top-sellers-img/top-sellers-desk-2.jpg"
+          alt="Top Sellers Image"
+          srcset="
+            ../img/top-sellers-img/top-sellers-desk-2.jpg    1x,
+            ../img/top-sellers-img/top-sellers-desk-2-2x.jpg 2x
+          "
+          class="top-sellers-img desktop-img"
+        />
+        <button class="button" type="button">Buy now</button>
+      </li>
+      <li class="sellers-item last">
+        <img
+          src="../img/top-sellers-img/top-sellers-desk-3.jpg"
+          alt="Top Sellers Image"
+          srcset="
+            ../img/top-sellers-img/top-sellers-desk-3.jpg    1x,
+            ../img/top-sellers-img/top-sellers-desk-3-2x.jpg 2x
+          "
+          class="top-sellers-img desktop-img"
+        />
+      </li>
+    </ul>
+  </div>
+  <div class="container wrapper">
+    <p class="top-sellers-text-added">
+      Crazy enough chocolate originates from a bean just like the coffee bean
+      called Cacao. Cacao has been around for thousands of years and was first
+      discovered by the Native American tribe called the Mayans.
+    </p>
+    <button class="button-added js-open-modal" type="button" data-modal="buy">
+      Buy now
+    </button>
+  </div>
+</section>
+=======
+<section class="sellers-section" id="top-sellers">
     <div class="container">
         <h2 class="title"><span class="title-accent">Top </span>Sellers</h2>
         <ul class="top-sellers-list">
@@ -440,7 +813,8 @@
         <button class="sellers-button-added" type="button">Buy now</button>
     </div>
 </section>
-    <section class="section reviews" id="lovers">
+
+      <section class="section reviews" id="lovers">
     <div class="container">
         <h2 class="title"><span class="title-accent">chocolate</span> is loved</h2>
         <div class="swiper">
@@ -484,18 +858,26 @@
         <button class="review-button">Leave a rewiew</button>
     </div>
 </section>
-    <section class="section subscribe-section">
-    <div class="subscribe-container">
-        <h2 class="subscribe-title">Explore our new chocolate first</h2>
-        <p class="subscribe-info">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
-            indulgence that
-            will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost
-            care, each piece is a work of art that is sure to please.
-        </p>
-        <button class="subscribe-button" type="submit">Subscribe</button>
-    </div>
+      <section class="section subscribe-section">
+  <div class="subscribe-container">
+    <h2 class="subscribe-title">Explore our new chocolate first</h2>
+    <p class="subscribe-info">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button
+      class="subscribe-button js-open-modal"
+      type="submit"
+      data-modal="subscribe"
+    >
+      Subscribe
+    </button>
+  </div>
 </section>
-    <!-- footer -->
+
+      <!-- footer -->
 <footer id="footer">
   <div class="container">
     <div class="footer-container">
@@ -548,11 +930,284 @@
   </div>
 </footer>
 
-    
-    </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  
-  </body>
-  
-  </html>
+      <div class="modal modal-buy" data-modal="buy">
+  <svg class="modal-icon-close js-modal-close">
+    <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+  </svg>
+  <h2 class="modal-title"><span class="modal-title-span">BUY</span> NOW</h2>
 
+  <ul class="modal-list-phone">
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-phone.jpg    1x,
+          ../img/modal-windows-img/black-phone@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-phone.jpg"
+        alt="black chocolate"
+        width="167"
+        height="148"
+      />
+      <span class="modal-item-span">100 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/white-milk-phone.jpg    1x,
+          ../img/modal-windows-img/white-milk-phone@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/white-milk-phone.jpg"
+        alt="white&milk chocolate"
+        width="167"
+        height="148"
+      /><span class="modal-item-span">200 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-bars-phone.jpg    1x,
+          ../img/modal-windows-img/black-bars-phone@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-bars-phone.jpg"
+        alt="milk chocolate"
+        width="167"
+        height="148"
+      /><span class="modal-item-span">300 g</span>
+    </li>
+  </ul>
+
+  <ul class="modal-list-tablet">
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-tablet.jpg    1x,
+          ../img/modal-windows-img/black-tablet@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-tablet.jpg"
+        alt="black chocolate"
+        width="120"
+        height="107"
+      />
+      <span class="modal-item-span">100 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/white-milk-tablet.jpg    1x,
+          ../img/modal-windows-img/white-milk-tablet@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/white-milk-tablet.jpg"
+        alt="white&milk chocolate"
+        width="120"
+        height="107"
+      /><span class="modal-item-span">200 g</span>
+    </li>
+    <li class="modal-item">
+      <img
+        srcset="
+          ../img/modal-windows-img/black-bars-tablet.jpg    1x,
+          ../img/modal-windows-img/black-bars-tablet@2x.jpg 2x
+        "
+        src="../img/modal-windows-img/black-bars-tablet.jpg"
+        alt="milk chocolate"
+        width="120"
+        height="107"
+      /><span class="modal-item-span">300 g</span>
+    </li>
+  </ul>
+
+  <form class="form" autocomplete="off">
+    <label class="modal-form-item">
+      <span class="label">Personal information </span>
+      <input
+        type="text"
+        name="name"
+        class="modal-input name input-none"
+        placeholder="Name"
+      />
+      <input
+        type="text"
+        name="surname"
+        class="modal-input input-none"
+        placeholder="Surname"
+      />
+      <div class="first-modal-input">
+        <input
+          type="text"
+          name="name"
+          class="modal-input input-width"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          name="surname"
+          class="modal-input input-width"
+          placeholder="Surname"
+        />
+      </div>
+    </label>
+
+    <label class="modal-form-item">
+      <span class="label">Email</span>
+      <input
+        type="email"
+        name="email"
+        class="modal-input"
+        placeholder="Enter your email"
+      />
+    </label>
+
+    <label class="modal-form-item">
+      <span class="label">Phone number</span>
+      <input
+        type="tel"
+        name="tel"
+        class="modal-input phone"
+        placeholder="Phone number"
+      />
+      <svg class="modal-input-icon">
+        <use href="../img/sprite/symbol-defs.svg#icon-flag"></use>
+      </svg>
+      <span class="modal-input-span">+380</span>
+    </label>
+
+    <label class="modal-form-item">
+      <span class="label">Card number</span>
+      <input
+        type="number"
+        name="card"
+        class="modal-input"
+        placeholder="Enter card"
+      />
+      <svg class="modal-input-icon-mc">
+        <use href="../img/sprite/symbol-defs.svg#icon-mastercard"></use>
+      </svg>
+    </label>
+
+    <label class="modal-form-item last">
+      <span class="label">Comment</span>
+      <textarea
+        name="comment"
+        class="modal-input comment"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+    <div>
+      <button
+        type="submit"
+        class="btn-modal js-modal-close js-open-modal"
+        data-modal="ty"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<div class="modal modal-ty" data-modal="ty">
+  <div class="icon-close-thumb">
+    <svg class="modal-ty-icon-close js-modal-close">
+      <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </div>
+  <h2 class="modal-title modal-title-ty">thank you!</h2>
+  <p class="modal-text-ty">
+    We are glad that you ordered our chocolate and we are giving you a 20%
+    discount on all our products.
+  </p>
+</div>
+
+<div class="modal modal-subscribe" data-modal="subscribe">
+  <svg class="modal-subscribe-icon-close js-modal-close">
+    <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+  </svg>
+  <h2 class="modal-title modal-title-subscribe">
+    <span class="modal-title-span">Explore our</span> <br />
+    new chocolate <span class="modal-title-span">first!</span>
+  </h2>
+  <form class="form-subscribe">
+    <input
+      type="email"
+      placeholder="Enter your email"
+      class="input-subscribe"
+    />
+    <button type="submit" class="btn-modal btn-subscribe js-modal-close">
+      Submit
+    </button>
+  </form>
+</div>
+
+<div class="modal modal-review" data-modal="review">
+  <svg class="modal-icon-close js-modal-close">
+    <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+  </svg>
+
+  <h2 class="modal-title modal-title-review">
+    <span class="modal-title-span">
+      leave a review <br />
+      about</span
+    >
+    our chocolate
+  </h2>
+
+  <form class="form-review" autocomplete="off">
+    <input
+      type="text"
+      name="name"
+      class="modal-input input-review"
+      placeholder="Name"
+    />
+
+    <input
+      type="email"
+      name="email"
+      class="modal-input input-review"
+      placeholder="Enter your email"
+    />
+
+    <div class="input-review-container">
+      <input
+        type="tel"
+        name="tel"
+        class="modal-input phone"
+        placeholder="Phone number"
+      />
+      <svg class="modal-input-icon input-icon-review">
+        <use href="../img/sprite/symbol-defs.svg#icon-flag"></use>
+      </svg>
+      <span class="modal-input-span input-icon-review">+380</span>
+    </div>
+
+    <textarea
+      name="comment"
+      class="modal-input comment input-review-comment"
+      placeholder="Enter text"
+    ></textarea>
+
+    <button
+      type="submit"
+      class="btn-modal js-modal-close js-open-modal"
+      data-modal="feedback"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
+<div class="modal modal-ty" data-modal="feedback">
+  <div class="icon-close-thumb">
+    <svg class="modal-ty-icon-close js-modal-close">
+      <use href="../img/sprite/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </div>
+  <h2 class="modal-title modal-title-ty">thank you for your feedback!</h2>
+  <p class="modal-text-ty">We are so happy to hear from you!</p>
+</div>
+
+    </main>
+    <div class="overlay js-overlay-modal"></div>
+    <script defer src="modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+  </body>
+</html>
