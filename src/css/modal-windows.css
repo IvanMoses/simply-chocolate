@@ -34,7 +34,7 @@
   /*  Побочные стили   */
 
   width: 100%;
-  max-width: 311px;
+  max-width: 263px;
 
   height: auto;
   background: #fafafa;
@@ -158,7 +158,7 @@
 }
 
 .modal-input {
-  width: 100%;
+  width: 225px;
   padding: 14px 18px;
   font-size: 14px;
   line-height: 17px;
@@ -170,6 +170,7 @@
 
 .modal-input.phone {
   padding-left: 106px;
+  width: 137px;
 }
 
 .modal-input-icon {
@@ -197,8 +198,8 @@
 .comment {
   display: block;
   padding: 14px 18px;
-  width: 100%;
-  height: 91px;
+  width: 225px;
+  height: 61px;
 
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   /* filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03)); */
@@ -314,7 +315,7 @@ textarea {
   }
 
   .modal-buy {
-    max-width: 609px;
+    max-width: 513px;
     padding: 48px;
   }
 
@@ -352,6 +353,7 @@ textarea {
     font-size: 18px;
     line-height: 22px;
     padding: 21px 24px;
+    width: 463px;
   }
 
   .first-modal-input {
@@ -362,7 +364,7 @@ textarea {
   }
 
   .input-width {
-    width: 246px;
+    width: 196px;
   }
 
   .modal-input-icon {
@@ -399,6 +401,7 @@ textarea {
 
   .modal-input.phone {
     padding-left: 177px;
+    width: 310px;
   }
 
   .btn-modal {
@@ -413,7 +416,8 @@ textarea {
 }
 
 .modal-ty {
-  height: 350px;
+  height: 266px;
+  width: 219px;
   background-color: #fd9222;
   border-radius: 15px;
   overflow: hidden;
@@ -469,14 +473,15 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .modal-ty {
-    max-width: 516px;
-    height: 414px;
+    width: 100%;
+    max-width: 309px;
+    height: 260px;
     background-color: #fd9222;
     border-radius: 15px;
     overflow: hidden;
-    padding-left: 154px;
+    padding-left: 163px;
     padding-right: 44px;
-    padding-top: 163px;
+    padding-top: 154px;
     background-image: url(../img/modal-windows-img/modal-chocolate-tablet.png);
   }
 
@@ -505,7 +510,7 @@ textarea {
 }
 
 .modal-subscribe {
-  height: 350px;
+  height: 149px;
   background-image: url(../img/modal-windows-img/modal-image-subscribe-tablet.jpg);
   background-position: top left;
   background-repeat: no-repeat;
@@ -535,7 +540,7 @@ textarea {
 
 .input-subscribe {
   padding: 14px 18px;
-  width: 263px;
+  width: 225px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
@@ -575,8 +580,8 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .modal-subscribe {
-    max-width: 538px;
-    height: 412px;
+    max-width: 458px;
+    height: 136px;
     background-image: url(../img/modal-windows-img/modal-image-subscribe-phone.jpg);
     background-size: contain;
     padding-top: 236px;
@@ -628,8 +633,8 @@ textarea {
 }
 
 .modal-review {
-  max-width: 311px;
-  height: 471px;
+  width: 263px;
+  height: auto;
   padding: 32px 24px;
 }
 
@@ -658,8 +663,8 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .modal-review {
-    max-width: 517px;
-    height: 631px;
+    width: 100%;
+    max-width: 437px;
     padding: 40px;
   }
 
@@ -673,11 +678,39 @@ textarea {
   }
 
   .input-review {
+    width: 387px;
     margin-bottom: 19px;
   }
 
   .input-icon-review {
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .input-review-comment {
+    width: 387px;
+    height: 93px;
+  }
+
+  .input-review-phone {
+    max-width: 234px;
+  }
+}
+
+.modal-feedback {
+  width: 229px;
+  padding-left: 58px;
+}
+
+.modal-left {
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback {
+    width: 297px;
+    padding-left: 170px;
+    padding-right: 49px;
+    padding-top: 163px;
   }
 }
