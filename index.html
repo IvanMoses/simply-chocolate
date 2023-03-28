@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate/assets/index-cc1f4465.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-b174523b.css">
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-64436925.css">
   </head>
   <body>
     <main>
@@ -330,16 +330,52 @@
                 </li>
                 </ul>
 
-                <!-- Mobile menu -->
-            <button class="burger-menu">
-                <svg width="28" height="28">
+                    <!-- Mobile menu -->
+                <button type="button"     
+                class="burger-menu js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg aria-label="mobile menu switcher" width="28" height="28">
                     <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-burger-menu"></use>
                 </svg>
             </button>
+            <div class="mobile-menu js-menu-container" id="mobile-menu">
+                <div class="container container-mobile-menu">
+                    <button class="mobile-menu-close js-close-menu" type="button">
+                        <svg width="28" height="28">
+                            <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-nav">
+                        <li><a class="mobile-link" href="./index.html">Home</a></li>
+                        <li><a class="mobile-link" href="#recipe">How it&#39;s made?</a></li>
+                        <li><a class="mobile-link" href="#products">Our products</a></li>
+                        <li><a class="mobile-link" href="#top-sellers">Top sellers</a></li>
+                        <li><a class="mobile-link" href="#lovers">Chocolate is loved</a></li>
+                    </ul>
+                    <ul class="social-links-mobile">
+                        <li>
+                            <a class="social-link" href="">
+                                <svg width="22" height="22">
+                                    <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="">
+                                <svg width="22" height="22">
+                                    <use href="/simply-chocolate/assets/symbol-defs-80824ad1.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>    
+            </div> 
         </div>
     </header>
 
-  
+    <script src="./mobile-menu.js"></script>
+
 </body>
 </html>
         
