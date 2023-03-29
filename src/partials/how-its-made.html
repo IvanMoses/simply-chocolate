@@ -3,15 +3,22 @@
         <h2 class="howmade-title">how it's <span class="howmade-title-part">made?</span></h2>
         <div class="howmade-content">    
             <div class="howmade-content-video">
-                <picture>
+                <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                    <picture>
                     <source srcset="/img/how-its-made-img/image-video375.jpg 1x, /img/how-its-made-img/image-video375@2x.jpg 2x" media="(max-width: 767px)" sizes="335px" />
                     <source srcset="/img/how-its-made-img/image-video768.jpg 1x, /img/how-its-made-img/image-video768@2x.jpg 2x" media="(max-width: 1199px)" sizes="614px" />
                     <source srcset="/img/how-its-made-img/image-video1200.jpg 1x, /img/how-its-made-img/image-video1200@2x.jpg 2x" media="(min-width: 1200px)" sizes="600px" />
-                    <img class="howmade-image" src="./images/image-video1200.jpg" alt="Chocolat">
-                </picture>
-                <svg class="howmade-svg-play">
-                    <use href="/img/how-its-made-img/symbol-howmade.svg#icon-play"></use>
-                </svg>
+                    <img class="howmade-image" src="./images/image-video1200.jpg" alt="Chocolat" style="cursor:pointer" > 
+                    <svg class="howmade-svg-play">
+                        <use href="/img/how-its-made-img/symbol-howmade.svg#icon-play"></use>
+                    </svg>
+                </div>
+                <div style="display:none">
+                    <iframe class="howmade-video"  src="https://www.youtube.com/embed/hNPEA5fn7qQ" title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>   
             </div>
             <div class="howmade-content-text"> 
                 <p class="howmade-section-text">Try our chocolates today and discover the perfect balance of flavor</p>
