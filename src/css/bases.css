@@ -8,6 +8,7 @@
 body {
     font-family: Montserrat, sans-serif;
     color: var(--primary-color);
+    background-color: #FAFAFA;
     margin: 0;
 }
 
