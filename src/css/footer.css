@@ -66,6 +66,7 @@ footer {
 
 .footer-social-item {
   stroke: #fff;
+  fill: none;
 }
 
 .footer-social-item:hover,
