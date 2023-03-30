@@ -119,12 +119,14 @@
 
 }
 
-.nuts {
-    background-color:#1E1823;
-}
-
 .milk-chocolate >.text-item-components,
 .nuts > .text-item-components  {
     color:#FFFFFF;
 }
+
+.nuts {
+    background-color:#1E1823;
+}
+
+
 
