@@ -1,0 +1,145 @@
+/* FOOTER */
+footer {
+  padding: 50px 0;
+  background: hsl(273, 19%, 12%);
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  width: 300px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-orange-title {
+  color: #fd9222;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 62px;
+}
+
+.footer-address-container {
+  display: flex;
+  gap: 65px;
+}
+
+.footer-main-buttons {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-address-title {
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.footer-social-links-list {
+  display: flex;
+  gap: 19px;
+}
+
+.footer-social-item {
+  stroke: #fff;
+  fill: none;
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus {
+  --color1: #fd9222;
+}
+
+.footer-main-buttons-list {
+  margin-top: 24px;
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.footer-links:hover,
+.footer-links:focus {
+  color: #fd9222;
+}
+
+.footer-links.current {
+  color: #fd9222;
+}
+
+/**************MOBILE SCREEN*****/
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 32px 0;
+  }
+
+  .footer-info {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-address-container {
+    justify-content: space-between;
+  }
+
+  .footer-main-buttons-list {
+    margin-top: 32px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer-social-item {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/**************TABLET SCREEN*****/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 54px;
+  }
+
+  .footer-main-buttons-list {
+    margin-top: 24px;
+  }
+
+  .footer-social-item {
+    width: 20px;
+    height: 20px;
+  }
+}

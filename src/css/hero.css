@@ -1,0 +1,226 @@
+/* Hero */
+
+.hero {
+padding-bottom: 72px;
+}
+
+.hero-container {
+    max-width: 1136px;
+    margin: 0 auto;
+    padding: 381px 40px 40px 40px;
+    background-size: cover;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+    url(../img/hero-img/hero-mobile.jpg);
+}
+
+.hero-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    margin: 0;
+    margin-bottom: 32px;
+    width: 484px;
+    color: var(--fourth-color);
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+    padding: 14px 40px;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    color: var(--fourth-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--third-color);
+}
+
+.buy-now {
+    border: none;
+    background-color: var(--third-color);
+}
+
+.buy-now:hover,
+.buy-now:focus {
+    background-color: #FCF1E0;
+}
+
+.how-made {
+    border: 1px solid var(--fourth-color);
+    background-color: transparent;
+}
+
+.how-made:hover,
+.how-made:focus {
+    border-color: var(--third-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.main-buttons {
+    display: flex;
+    flex-grow: 1;
+    gap: 14px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--fourth-color);
+    border: none;
+    stroke: var(--third-color);
+    fill: var(--third-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.arrow:hover,
+.arrow:focus {
+    stroke: var(--fourth-color);
+    fill: var(--fourth-color);
+    background-color: var(--third-color);
+}
+
+.scroll {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    gap: 14px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: var(--fourth-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll:hover,
+.scroll:focus {
+    color: var(--third-color);
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero-container {
+        padding: 395px 21px 27px 20px;
+    }
+
+    .hero-text {
+        max-width: 299px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .btn {
+        padding: 12px 28px;;
+    }  
+
+    .main-buttons {
+        margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .scroll {
+        height: 14px;
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    .arrow {
+        width: 16px;
+        height: 16px;
+        padding: 6px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .hero-container {
+        padding-top: 671px;
+    }
+    
+    .hero {    
+    padding-bottom: 50px;    
+    }
+}   
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
+
+/* Hero image */
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(../img/hero-img/hero-desktop@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(../img/hero-img/hero-tablet.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+	(min-resolution: 192dpi) and (min-width: 768px),
+	(min-resolution: 2dppx) and (min-width: 768px) {
+        .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(../img/hero-img/hero-tablet@2x.jpg);
+        }
+  }
+  
+  @media screen and (min-width: 1136px) {
+    
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(../img/hero-img/hero-desktop.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1136px),
+	(min-resolution: 192dpi) and (min-width: 1136px),
+	(min-resolution: 2dppx) and (min-width: 1136px) {
+       .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(../img/hero-img/hero-desktop@2x.jpg);
+        } 
+    }

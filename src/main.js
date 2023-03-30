@@ -1,1 +1,3 @@
-import './styles.js/slider'
+import './slider';
+import './modal';
+import './mobile-menu';

@@ -1,0 +1,184 @@
+.section.howmade {
+    padding-bottom: 72px;
+    background-color: var(--fourth-color);
+}
+
+@media screen and (min-width: 768px) {
+    .section.howmade {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section.howmade {
+        padding-bottom: 128px;
+    }
+}
+
+.howmade-title {
+    margin-bottom: 32px;
+
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-title {
+        margin-bottom: 50px;
+    }
+}
+
+.howmade-title-part {
+    color: var(--third-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+.howmade-content-video {
+    position: relative;
+}
+
+.howmade-video {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+    display: block;
+    max-width: 355px;
+    width: 100%;
+    height: 500px;
+
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-video {
+        max-width: 614px;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-video {
+        margin: 0;
+        max-width: 600px; 
+        width: 600px;
+        height: 400px;
+    }
+}
+
+.howmade-image {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-image {
+        margin: 0;
+    }
+}
+
+.howmade-svg-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-svg-play {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.howmade-content-text {
+    box-sizing: border-box;
+    padding: 20px 14px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 335px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-content-text {
+        padding: 32px 102px 32px 32px;
+
+        max-width: 614px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-content-text {
+        margin: 0;
+        padding: 32px 60px 34px 32px;
+
+        max-width: 516px;
+    }
+}
+
+
+.howmade-section-text {
+    margin-bottom: 20px;
+
+    max-width: 307px;
+    width: 100%;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .howmade-section-text {
+        margin-bottom: 28px;
+
+        max-width: 350px;
+    }
+}
+
+.howmade-section-items {
+    padding-left: 8px;
+    list-style-image: url(../img/how-its-made-img/ellipselist.svg);
+}
+
+.howmade-section-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+}
+
+.howmade-section-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+    .howmade-section-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
